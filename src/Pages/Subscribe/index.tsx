@@ -1,5 +1,5 @@
 import { FormEvent, useState } from "react";
-import { Navigate, useNavigate } from "react-router-dom";
+import { useNavigate } from "react-router-dom";
 import { Logo } from "../../components/Logo";
 import { useCreateSubscriberMutation } from "../../graphql/generated";
 // Lib de form react-hook-form
