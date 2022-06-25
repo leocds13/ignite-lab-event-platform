@@ -4,6 +4,8 @@ import { Logo } from "../../components/Logo";
 import { useCreateSubscriberMutation } from "../../graphql/generated";
 // Lib de form react-hook-form
 
+import codeMockup from '../../assets/code-mockup.png';
+
 export function Subscribe() {
     const navigate = useNavigate();
 
@@ -70,14 +72,14 @@ export function Subscribe() {
             <button
               type="submit"
               disabled={loading}
-              className="mt-4 bg-green-500 uppercase py-4 rounded text-sm hover:bg-green-700 transition-colors disabled:opacity-50"
+              className="mt-4 bg-green-500 uppercase py-4 rounded text-sm font-bold hover:bg-green-700 transition-colors disabled:opacity-50"
             >
               Garantir minha vaga
             </button>
           </form>
         </div>
       </div>
-      <img src="/src/assets/code-mockup.png" className="mt-10" alt="" />
+      <img src={codeMockup} className="mt-10" alt="" />
     </div>
   );
 }
